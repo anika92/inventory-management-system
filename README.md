@@ -44,3 +44,44 @@ Create a PostgreSQL database named `inventory_db` on your local server.
 1. Navigate to the backend folder:
    ```bash
    cd backend
+
+Create and activate a virtual environment:
+
+Windows:
+
+Bash
+python -m venv venv
+venv\Scripts\activate
+macOS/Linux:
+
+Bash
+python3 -m venv venv
+source venv/bin/activate
+Install dependencies:
+
+Bash
+pip install -r requirements.txt
+Start the FastAPI server:
+
+Bash
+uvicorn app.main:app --reload
+The API documentation will be available at http://127.0.0.1:8000/docs.
+
+3. Frontend Setup (React + Vite)
+Open a new terminal and navigate to the frontend directory:
+
+Bash
+cd frontend
+Install Node dependencies:
+
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
+The application will open at http://localhost:5173.
+
+📄 License
+This project is open-source and available under the MIT License.
+
